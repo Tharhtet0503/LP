@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ランディングページサンプル</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        body{
+            background-color: white;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .header{
             background: rgba(60, 57, 233, 0.993);
             color: rgba(255, 255, 255, 0.76);
@@ -18,51 +28,129 @@
             color: aqua;
         }
         .footer{
-            background-color: white;
+            background-color: rgb(126, 123, 107);
             padding: 40px 0;
             text-align: center;
         }
+        .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.image-container {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  
+  /* 画像自体も幅100%で縮小・拡大に対応 */
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
     </style>                                                                                                                                                                                                    
 </head>
 
 <body>
-
-    <section class="header">
-        <div class="container">
-            <h1 class="display-4">あなたのWEBサイトを簡単構築</h1>
-            <p class="lead">bootstrapでもだんなデザインを実現しましょう。</p>
-            <a href="#contact" class="btn btn-light btn-lg mt-4">お問い合わせ</a>
-        </div>
-    </section>
     
-    <section class="py-5">
+    <div class="container mt-4" >
+        <div class="row">
+            <div class="col-md-11 "> 
+                <h1 class="container text-center mb-4">Wellcome My Customers</h1>
+            
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="photo3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>いらっしゃいませ！🙆‍♀️</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="photo1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5></h5>
+                          <p></p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="photo2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5></h5>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+            <div class="d-grid gap-5 mt-4">
+            <button class="btn btn-primary" type="button">お問い合わせ</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+      <section class="py-5" >
         <div class="container text-center">
-            <h2 class="mb-4">3つの特徴</h2>
+            <h2 class="mb-4">こちらご覧くださいませ！</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="feature-icon mb-3">🚀</div>
-                    <h5>高速開発</h5>
-                    <p>すぐに使えるコンポーネントで、スピーディに構築可能</p>
+                    <div class="feature-icon mb-3">🍱</div>
+                    <h5>お弁当</h5>
+                    <p>申し込みます</p>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-icon mb-3">📱</div>
-                    <h5>レスポンシブ対応</h5>
-                    <p>スマホ。タブレット。Pcでも見やすいデザイン</p>
+                    <div class="feature-icon mb-3">🍔</div>
+                    <h5>ハンバーグ</h5>
+                    <p>申し込みます</p>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-icon mb-3">🎨</div>
-                    <h5>デザイン生</h5>
-                    <p>統一された美しいUIでプロつぼさを演出。</p>
+                    <div class="feature-icon mb-3">🍨</div>
+                    <h5>アイスクリーム</h5>
+                    <p>申し込みます</p>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section class="bg-light py-5">
         <div class="container">
             <div class="row algin-items-center">
                 <div class="col-md-6">
-                    <img src="https://static.wikia.nocookie.net/naruto/images/d/dc/Naruto%27s_Sage_Mode.png/revision/latest/scale-to-width-down/1920?cb=20150124180545" alt="サービス画像" class="img-fluid rounded">
+                    <a href="https://px.a8.net/svt/ejp?a8mat=4535C1+BFEJSI+2PEO+OPPBL" rel="nofollow">
+                        <img border="0" width="200" height="200" alt="" src="https://www20.a8.net/svt/bgt?aid=250409665691&wid=001&eno=01&mid=s00000012624004151000&mc=1"></a>
+                        <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4535C1+BFEJSI+2PEO+OPPBL" alt="">
 
                 </div>
                 <div class="col-md-6">
@@ -75,11 +163,26 @@
         </div>
     </section>
 
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row algin-items-center">
+                <div class="col-md-6">
+                    <span class="a8ad 4pkFr3V-g7-uJaTSOj"></span><script type="text/javascript" src="//statics.a8.net/ad/ad.js"></script><script type="text/javascript">a8adscript('body').showAd({"req": {"mat":"4535C1+5JG8FM+4X5I+BWGDT","alt":"商品リンク","id":"4pkFr3V-g7-uJaTSOj"},"goods": {"ejp":"h"+"ttps://shokubun.ec-design.co.jp/products/detail/f7a22452-c1f5-4aa6-85a9-e62b1c063095","imu":"h"+"ttps://cos.ec-design.co.jp/ec-design-shokubun-prd/products/20250505301/20250505301_01.jpg?20250417003207"}});</script>
+                </div>
+                <div class="col-md-6">
+                    <h3>あなたのアイデアを形にします。</h3>
+                    <p>bootstrap使えば、あなたのサービスや商品を魅力的に伝えるページがかんたんに作れま
+                        す。コードが苦手でも安心。</p>
+                        <a href="contact" class="btn btn-primary mt-3>">無料で相談する</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer id="contact" class="footer">
         <div class="container">
             <h4>お問い合わせこちら</h4>
             <p>お気軽にご相談ください。</p>
-            <a href="mailto:info@example.com" class="btn btn-outline-primary">メールで連絡</a>
+            <button href="mailto:info@example.com" class="button">メールで連絡</button>
         </div>
         
     </footer>
